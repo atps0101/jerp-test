@@ -1,0 +1,10 @@
+node_modules/
+output/*.png
+output/*.log
+output/silent.mp4
+output/review*
+public/audio/voiceover-cues/
+*.tsbuildinfo
+output/*.wav
+output/.bundle/
+public/audio/*.wav

@@ -1,4 +1,6 @@
-> **Новая сценарная разработка:** [The Unsupported Leap — 49 s, сценарий и визуальная режиссура](preproduction/README.md). MP4 ниже — ранний эскиз; новый ролик ещё не отрендерен.
+> **Готовая новая версия:** [The Unsupported Leap — 49 s, 1080p, озвучка и исходники](production/README.md).
+
+> **Новая сценарная разработка:** [The Unsupported Leap — 49 s, сценарий и визуальная режиссура](preproduction/README.md). MP4 ниже — ранний эскиз; готовый ролик находится в `production/`.
 
 # JERP motion marketing film
 

@@ -1,0 +1,97 @@
+{
+  "engine": "kokoro-onnx",
+  "voice": "af_heart",
+  "sample_rate": 48000,
+  "duration": 49,
+  "cues": [
+    {
+      "id": "01",
+      "text": "You ask your AI to choose a time tracker.",
+      "start": 0.2,
+      "end": 3.255,
+      "raw_duration": 3.063,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "02",
+      "text": "The page says free trial. The answer says free forever.",
+      "start": 5.2,
+      "end": 8.665,
+      "raw_duration": 3.469,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "03",
+      "text": "A confident sentence. Two unsupported leaps.",
+      "start": 10.2,
+      "end": 13.239,
+      "raw_duration": 3.051,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "04",
+      "text": "Put JERP between the source and the answer.",
+      "start": 14.2,
+      "end": 16.578,
+      "raw_duration": 2.385,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "05",
+      "text": "It screens incoming content, then checks the claims against sources.",
+      "start": 19.2,
+      "end": 23.483,
+      "raw_duration": 4.289,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "06",
+      "text": "A trial is supported. Free forever is contradicted. Best is opinion.",
+      "start": 25.2,
+      "end": 30.102,
+      "raw_duration": 4.909,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "07",
+      "text": "Compact facts, with sources, inside your size limit. Less for your AI to read.",
+      "start": 31.2,
+      "end": 36.611,
+      "raw_duration": 5.722,
+      "tempo": 1.0557,
+      "voice": "af_heart"
+    },
+    {
+      "id": "08",
+      "text": "Your AI can answer from those facts. You can check the source.",
+      "start": 37.2,
+      "end": 41.481,
+      "raw_duration": 4.287,
+      "tempo": 1,
+      "voice": "af_heart"
+    },
+    {
+      "id": "09",
+      "text": "No source, no claim. JERP. Confidence in the Truth. Stop guessing. Start checking.",
+      "start": 42.2,
+      "end": 47.991,
+      "raw_duration": 5.803,
+      "tempo": 1,
+      "voice": "af_heart"
+    }
+  ],
+  "music": "Original deterministic additive synthesis; seed 131",
+  "model_sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "model_source": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+  "voices_source": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+  "engine_license": "MIT",
+  "model_license": "Apache-2.0 (per upstream project README)",
+  "note": "Locally synthesized neutral English voice; no real person cloned or commissioned. All cues are scheduled independently; only cue07 was accelerated, by 1.0557x, to fit its scene."
+}

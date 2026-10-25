@@ -1,0 +1,10 @@
+import {spawnSync} from 'node:child_process';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const draft=process.argv.includes('--draft');
+const path=(f)=>resolve(root,'output',f);
+const input=path(draft?'review-draft.mp4':'silent.mp4');
+const output=path(draft?'review-draft-audio.mp4':'jerp-the-unsupported-leap.mp4');
+const args=['-y','-hide_banner','-i',input,'-i',path('master-audio.wav'),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','256k','-ar','48000','-t','49','-movflags','+faststart','-metadata','title=JERP — The Unsupported Leap','-metadata','comment=Illustrative fictional product example; procedural CSS 3D and Remotion animation; original synthesized score and neural voiceover.',output];
+const r=spawnSync('ffmpeg',args,{stdio:'inherit'});process.exit(r.status??1);

@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,255
+You ask your AI to choose a time tracker.
+
+2
+00:00:05,200 --> 00:00:08,666
+The page says free trial. The answer says free forever.
+
+3
+00:00:10,200 --> 00:00:13,239
+A confident sentence. Two unsupported leaps.
+
+4
+00:00:14,200 --> 00:00:16,578
+Put JERP between the source and the answer.
+
+5
+00:00:19,200 --> 00:00:23,483
+It screens incoming content, then
+checks the claims against sources.
+
+6
+00:00:25,200 --> 00:00:30,102
+A trial is supported. Free
+forever is contradicted. Best is opinion.
+
+7
+00:00:31,200 --> 00:00:36,611
+Compact facts, with sources, inside your size
+limit. Less for your AI to read.
+
+8
+00:00:37,200 --> 00:00:41,481
+Your AI can answer from those facts. You can check the source.
+
+9
+00:00:42,200 --> 00:00:47,991
+No source, no claim. JERP. Confidence
+in the Truth. Stop guessing. Start checking.

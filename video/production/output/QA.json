@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "file": "jerp-the-unsupported-leap.mp4",
+  "sha256": "5db164e1658849f100ebc1c013a39caa41dd568be7593dbb1d210614d7ebee64",
+  "bytes": 8013975,
+  "checks": {
+    "video_h264": true,
+    "native_1080p": true,
+    "fps_30": true,
+    "exactly_1470_decoded_frames": true,
+    "duration_49s": true,
+    "audio_aac_stereo_48k": true,
+    "full_decode_no_errors": true,
+    "last_90_frames_present": true,
+    "cta_stable_all_90_frames": true,
+    "integrated_lufs_target": true,
+    "no_audio_clipping": true,
+    "true_peak_below_zero": true,
+    "rendered_source_unchanged": true
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "decoded_frames": 1470,
+    "duration": 49.0,
+    "codec": "h264"
+  },
+  "audio": {
+    "lufsIntegrated": -16,
+    "lufsShortTermMax": -14.9,
+    "samplePeakDb": -1.4,
+    "truePeakDb": -1.3,
+    "clipping": {
+      "count": 0,
+      "firstAt": null
+    }
+  },
+  "cta": {
+    "start_seconds": 46,
+    "duration_seconds": 3,
+    "native_endpoints_identical": true,
+    "max_average_luma_change_8bit": 0.006944444444444444,
+    "decoded_frames": 90,
+    "distinct_decoded_frame_hashes": 72
+  },
+  "review": {
+    "native_story_stills": 9,
+    "additional_transition_stills": 22,
+    "full_49_second_motion_draft_rendered": true,
+    "actual_frames_inspected": true,
+    "full_final_movie_decoded": true
+  },
+  "limitations": [
+    "Fictional illustrative example, not authenticated MCP footage",
+    "Procedural CSS 3D scene geometry; no claim of a Blender or WebGL final render",
+    "Neural voiceover, not a human studio recording",
+    "Subtitles aligned to synthesized cue boundaries, not individual words"
+  ]
+}
