@@ -1,0 +1,198 @@
+{
+  "title": "The Unsupported Leap",
+  "subtitle_ru": "Утверждение выходит за край своего основания",
+  "version": "1.0 / preproduction",
+  "duration_seconds": 49,
+  "language": "en",
+  "audience": "People using AI to research tools, compare vendors and prepare recommendations",
+  "promise": "See what the source supports before you act on an AI answer.",
+  "example": {
+    "label": "Illustrative example · fictional vendor",
+    "domain": "northstar.example/product",
+    "prompt": "Choose a time tracker for our team.",
+    "source_heading": "Time tracking for your team",
+    "source_lines": [
+      "Free trial available.",
+      "A paid subscription is required after the trial."
+    ],
+    "draft": "The best choice. Free forever.",
+    "final_answer": "The page offers a free trial. A paid subscription is required afterward.",
+    "citation": "Source: northstar.example/product",
+    "is_live_mcp_result": false
+  },
+  "shots": [
+    {
+      "id": "01",
+      "start": 0,
+      "end": 5,
+      "title": "The real task",
+      "tool": null,
+      "screen": [
+        "Choose a time tracker for our team.",
+        "Free trial available.",
+        "A paid subscription is required after the trial."
+      ],
+      "vo": "You ask your AI to choose a time tracker.",
+      "problem": "AI is being used for a real purchasing decision.",
+      "action_ru": "Одна стеклянная страница поставщика, рядом компактный запрос пользователя. Обе строки условий читаемы. Движение вдоль строк, а не общий пролёт ради красоты.",
+      "camera_ru": "50 mm, спокойный push-in на 12%; камера остаётся на стороне пользователя.",
+      "transition_ru": "Строка Free trial available отделяется от страницы, сохраняя тонкий source-tab.",
+      "sound_ru": "Тихий тактильный клик; почти незаметная низкая пульсация.",
+      "read_hold_seconds": 3.2
+    },
+    {
+      "id": "02",
+      "start": 5,
+      "end": 10,
+      "title": "The unsupported leap",
+      "tool": null,
+      "screen": [
+        "AI DRAFT",
+        "The best choice.",
+        "Free forever."
+      ],
+      "vo": "The page says free trial. The answer says free forever.",
+      "problem": "An answer adds a recommendation and a promise the source does not support.",
+      "action_ru": "Карточка черновика вытягивается в горизонтальную стеклянную ленту. Под Free trial есть источник; Free forever и Best выходят за его край. Источник не переписывается и остаётся в пространстве.",
+      "camera_ru": "65 mm, lateral track 0.45 m слева направо. Фокус переводится с документа на выступающий текст.",
+      "transition_ru": "Движение заканчивается на свободном конце ленты: зритель видит расстояние между фразой и её основанием.",
+      "sound_ru": "Мягкое натяжение материала. Ритм становится чуть плотнее; никакой комедийной ошибки.",
+      "read_hold_seconds": 3.0
+    },
+    {
+      "id": "03",
+      "start": 10,
+      "end": 14,
+      "title": "Confidence is not evidence",
+      "tool": null,
+      "screen": [
+        "A confident answer",
+        "needs a source."
+      ],
+      "vo": "A confident sentence. Two unsupported leaps.",
+      "problem": "Confident wording conceals a gap in evidence.",
+      "action_ru": "Короткий макро-кадр разрыва. Тень от Free forever падает за пределы документальной подложки. Камера замирает; зритель успевает понять метафору.",
+      "camera_ru": "85 mm macro feel, фокус на краю стекла; сам экранный текст остаётся резким в композе.",
+      "transition_ru": "Match cut по стеклянной кромке: она становится тонкой рабочей поверхностью JERP.",
+      "sound_ru": "Пауза в пульсе на 0.35 s, короткий хвост отражения.",
+      "read_hold_seconds": 2.4
+    },
+    {
+      "id": "04",
+      "start": 14,
+      "end": 19,
+      "title": "A check before the answer",
+      "tool": "guard",
+      "screen": [
+        "JERP",
+        "guard",
+        "Screen incoming content"
+      ],
+      "vo": "Put JERP between the source and the answer.",
+      "problem": "Untrusted content needs screening before it reaches the agent.",
+      "action_ru": "Тонкая стеклянная поверхность с настоящим dotted wordmark появляется между страницей и ответом. Страница проходит проверку входящего контента. Малый маркер guard следует за контентом; не появляется щит, печать SAFE или обещание полной защиты.",
+      "camera_ru": "50 mm, отъезд раскрывает взаимное положение страницы, JERP и черновика без смены оси.",
+      "transition_ru": "Стеклянная поверхность поворачивается ребром и превращается в разделители отдельных утверждений.",
+      "sound_ru": "Первое появление ясного двухнотного мотива бренда. Неброский звук стекла.",
+      "read_hold_seconds": 2.7
+    },
+    {
+      "id": "05",
+      "start": 19,
+      "end": 25,
+      "title": "Separate the claims",
+      "tool": "verdict",
+      "screen": [
+        "verdict",
+        "Check each claim against its source"
+      ],
+      "vo": "It screens incoming content, then checks the claims against sources.",
+      "problem": "Facts and opinions arrive mixed inside one answer.",
+      "action_ru": "Из страницы и черновика выносятся три проверяемые единицы: Free trial (из источника); Free forever и Best choice (из AI-черновика). Рядом сохраняется исходный фрагмент страницы. Каждая связь ведёт к конкретной цитате; для Best нет притворной доказательной связи.",
+      "camera_ru": "50 mm, поворот вокруг вертикали максимум 12°, затем камера выравнивается для чтения.",
+      "transition_ru": "Три карточки занимают заранее выделенные места таблицы вердиктов. Никакой вспышки, закрывающей текст.",
+      "sound_ru": "Три негромких тактильных события. Последнее оставляет музыкальную фразу открытой.",
+      "read_hold_seconds": 3.0
+    },
+    {
+      "id": "06",
+      "start": 25,
+      "end": 31,
+      "title": "Show the distinction",
+      "tool": "verdict",
+      "screen": [
+        "Free trial → true",
+        "Free forever → false",
+        "Best choice → not_fact",
+        "Supported by source / Contradicted by source / Opinion"
+      ],
+      "vo": "A trial is supported. Free forever is contradicted. Best is opinion.",
+      "problem": "A useful check must distinguish contradiction from opinion.",
+      "action_ru": "Все три строки видимы вместе. Активация по очереди в первые 2 s, затем общий hold 4 s. Free trial связан с первой строкой источника; Free forever — со строкой о платной подписке; Best помечен Opinion. Цвет подкрепляет текст, но не заменяет его.",
+      "camera_ru": "Почти фронтально, 50 mm. Камера неподвижна во время чтения.",
+      "transition_ru": "Два подтверждённых условия исходной страницы складываются в компактную карточку фактов. Ложная и оценочная фразы не превращаются в факты.",
+      "sound_ru": "Три разных мягких атаки без сирены и победного джингла.",
+      "read_hold_seconds": 4.0
+    },
+    {
+      "id": "07",
+      "start": 31,
+      "end": 37,
+      "title": "Compact, traceable context",
+      "tool": "speaker",
+      "screen": [
+        "speaker",
+        "Sourced facts. Less to read.",
+        "Within your requested size limit"
+      ],
+      "vo": "Compact facts, with sources, inside your size limit. Less for your AI to read.",
+      "problem": "The agent does not need all the surrounding page material in its context.",
+      "action_ru": "Исходная страница остаётся вне AI-контекста. Два факта с маленькими source-tabs проходят в область контекста одной компактной карточкой. Широкая лента складывается, но сами данные не сжимаются до нечитаемого текста. Без численного счётчика токенов.",
+      "camera_ru": "50 mm, один боковой проезд за карточкой. Область контекста занимает ограниченную рамку, не бесконечный туннель.",
+      "transition_ru": "Карточка фактов становится структурой итогового ответа; source-tabs сохраняют положение.",
+      "sound_ru": "Шумовой слой тихо уходит, остаётся чистый короткий мотив.",
+      "read_hold_seconds": 3.2
+    },
+    {
+      "id": "08",
+      "start": 37,
+      "end": 42,
+      "title": "An answer you can inspect",
+      "tool": null,
+      "screen": [
+        "The page offers a free trial.",
+        "A paid subscription is required afterward.",
+        "Source: northstar.example/product"
+      ],
+      "vo": "Your AI can answer from those facts. You can check the source.",
+      "problem": "The user needs the supported terms, not an unjustified recommendation.",
+      "action_ru": "Читаемый итоговый ответ. Короткая анимация source-tab раскрывает знакомый фрагмент страницы: зритель узнаёт те же слова, что видел в начале. Никакой награды Best и обещания, что продукт сам принимает решение о покупке.",
+      "camera_ru": "50 mm, фронтальный hold; параллакс фоновых карточек минимален.",
+      "transition_ru": "Источник сворачивается в точку; точки переходят в фактический wordmark JERP без изменения рисунка букв.",
+      "sound_ru": "Тихий клик источника и спокойное разрешение музыкальной фразы.",
+      "read_hold_seconds": 3.6
+    },
+    {
+      "id": "09",
+      "start": 42,
+      "end": 49,
+      "title": "The brand, then the invitation",
+      "tool": null,
+      "screen": [
+        "No source, no claim.",
+        "JERP",
+        "Confidence in the Truth",
+        "Stop guessing. Start checking.",
+        "Try Free",
+        "getjerp.com"
+      ],
+      "vo": "No source, no claim. JERP. Confidence in the Truth. Stop guessing. Start checking.",
+      "problem": "Make the next action clear and memorable.",
+      "action_ru": "42–43.5: No source, no claim. 43.5–46: wordmark + Confidence in the Truth. 46–49: Try Free и getjerp.com с небольшим Stop guessing. Start checking. Логотип сохраняется. Стеклянная сфера сайта остаётся маленьким бренд-акцентом.",
+      "camera_ru": "Фиксированный кадр. Никакого финального вращения логотипа.",
+      "transition_ru": "Последние 3 s — чистый неподвижный CTA; финал без затемнения, чтобы кадр мог остаться постером.",
+      "sound_ru": "Двухнотный бренд-мотив; хвост затухает к 48.8 s без обрезания.",
+      "read_hold_seconds": 3.0
+    }
+  ]
+}

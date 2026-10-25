@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "Preproduction artifacts, not finished animation or live MCP integration",
+  "checks": {
+    "timeline_contiguous": true,
+    "vo_93_words": true,
+    "10_source_quotes_match": true,
+    "six_1920x1080_styleframes": true,
+    "brand_assets_match_sha256": true,
+    "palette_matches_live_css": true,
+    "pdf_14_pages": true
+  },
+  "browser_observations": {
+    "deck_slides": 14,
+    "overflowing_slides": 0,
+    "original_barlow_loaded": true,
+    "original_bitcount_loaded": true
+  },
+  "render_observations": {
+    "blender": "4.3.2",
+    "engine": "Cycles",
+    "lookdev_image_saved": true,
+    "denoising": "Disabled because this Blender build has no OpenImageDenoise; 64 samples used instead."
+  },
+  "not_run": [
+    "Authenticated MCP calls",
+    "Recorded voiceover timing",
+    "Animatic audience test",
+    "Final video render",
+    "Final audio loudness measurement"
+  ]
+}

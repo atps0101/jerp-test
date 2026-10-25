@@ -1,0 +1,212 @@
+Skip to content
+Confidence in the Truth
+
+JERP fact-checks your AI before it answers: every claim comes back true, false, or not a fact, with a confidence score and a source. Your model reads less, so you pay for fewer tokens. Want to know how it works?
+
+Try Free
+
+Works with agents, tools, and the API, not instead of them.
+
+Claude
+GPT
+Copilot
+Cursor
+Gemini
+Windsurf
++19 more
+How it works
+
+Algorithms do the slow, expensive work, so it comes back faster and cheaper. JERP clears the noise out of the context and keeps your AI on the right path: the course, the context, and the tone of voice stay put, so the work with it is more effective.
+
+Play the video. It explains this in detail.
+
+play_arrow
+Usage limit reached
+Save tokens
+by noisy context?
+with cleaner context
+Try Now
+How use free
+
+No account required. Each key lasts 1 hour and allows 100 requests. Use it for a demo, a test, or a benchmark — we do not recommend daily use. For a higher limit and safe storage of your data in Jerp cloud, create an account and pick a plan.
+
+MCP
+API
+content_copy
+https://getjerp.com/open/mcp
+
+The hour starts when you click
+
+content_copy
+GET FREE API KEY
+
+Just copy this and give it to your AI.
+
+content_copy
+Install the JERP skills from https://github.com/jerp-ai and use the MCP tools.
+OPEN JERP
+
+Connect MCP using your AI's connector or plugin. The walkthrough for your setup is in the open MCP and open API docs. Open traffic is what trains JERP: before anything is kept, names, emails, and other private details are swapped for placeholders, so the store holds the shape of the request — not your real data.
+
+Claude
+Copilot
+Cursor
+Cline
+Windsurf
+JetBrains
+Warp
+Zed
+Perplexity
+ChatGPT
+Gemini
+VS Code
+Continue
+n8n
+Make
+Zapier
+Pipedream
+LangChain
+LlamaIndex
+Vercel
+Dify
+Flowise
+Botpress
+Voiceflow
+
+ALL OF THIS FITS.
+
+A small agency is picking a time tracker. They want the best one and the most popular one. A few homepages say you can try them free. Check the pages before anyone crowns a winner.
+
+The client wants an email tool bought off the pricing page: the one every team recommends, with the highest open rates. Say only what those pages support.
+
+We launch Monday. This landing-page builder is sold as the fastest to launch. Compare the ones with a public changelog and leave out anything the pages don't say.
+
+Budget meeting is tomorrow. The sales deck says this classroom tool raises test scores the most. Read the product page before I forward it.
+
+Renewal is on my desk. The quote calls this reading app the most loved by teachers, including the ones we already pay for. Check those pages.
+
+The dean asked about a quiz tool. The homepage says it guarantees better grades. Read the product pages before I reply.
+
+Before we ship, check the sample key in the README. The page says it never expires and grants full access.
+
+Review this before it merges: if (!req.headers.authorization) return 200. The comment says that is safe.
+
+We're signing the annual plan tomorrow. The status page says the API never drops a webhook. Read that page and the pricing page.
+
+The deck says we should run the company on the tool every startup switches to. Compare the ones teams our size already use and cut the slogan.
+
+We're about to pay for the year. The CRM page says it's what investors expect and the default for a company our size. Read the pricing page.
+
+Demo is booked. The hiring tool's homepage says every startup switches to it. Read it before I take the call.
+
+For the board memo, read this shortlist of homepages. Say who calls themselves the market leader. Don't pick one for me.
+
+The competitor slide needs a source. This shortlist is not our closest competitor until a homepage says so. Read them.
+
+This chart names a category king. Read what the sites themselves say before it goes in the deck.
+
+I'm approving the purchase tomorrow. The bookkeeping app says it guarantees we won't miss a deduction. Read the pricing page.
+
+Payroll quote is in. They call it the safest for a team our size. Compare the ones that publish their pricing.
+
+The trial ends Friday. This expense tool says it guarantees we won't miss a receipt. Read the feature page before I put a card down.
+
+This draft is headed to publish as the definitive version, and it fills in what the source doesn't say. Mark what isn't on the page.
+
+The piece adds the quotes the source left out and calls that the most complete account. Keep only what the page supports.
+
+We're going to press tonight. Don't let the headline say definitive, and don't fill the gap the page doesn't cover. The page is the source.
+
+The client wants a yes in the memo. Read the vendor page before anyone writes fully compliant with every rule they listed.
+
+Before I write the client, read the clauses they named. I will not call the contract fully compliant without that.
+
+The checklist is marked fully approved. The only source I'll accept is the vendor's own page, checked against every rule on the checklist.
+
+A small agency is picking a time tracker. They want the best one and the most popular one. A few homepages say you can try them free. Check the pages before anyone crowns a winner.
+
+The client wants an email tool bought off the pricing page: the one every team recommends, with the highest open rates. Say only what those pages support.
+
+We launch Monday. This landing-page builder is sold as the fastest to launch. Compare the ones with a public changelog and leave out anything the pages don't say.
+
+Budget meeting is tomorrow. The sales deck says this classroom tool raises test scores the most. Read the product page before I forward it.
+
+Renewal is on my desk. The quote calls this reading app the most loved by teachers, including the ones we already pay for. Check those pages.
+
+The dean asked about a quiz tool. The homepage says it guarantees better grades. Read the product pages before I reply.
+
+Before we ship, check the sample key in the README. The page says it never expires and grants full access.
+
+Review this before it merges: if (!req.headers.authorization) return 200. The comment says that is safe.
+
+We're signing the annual plan tomorrow. The status page says the API never drops a webhook. Read that page and the pricing page.
+
+The deck says we should run the company on the tool every startup switches to. Compare the ones teams our size already use and cut the slogan.
+
+We're about to pay for the year. The CRM page says it's what investors expect and the default for a company our size. Read the pricing page.
+
+Demo is booked. The hiring tool's homepage says every startup switches to it. Read it before I take the call.
+
+For the board memo, read this shortlist of homepages. Say who calls themselves the market leader. Don't pick one for me.
+
+The competitor slide needs a source. This shortlist is not our closest competitor until a homepage says so. Read them.
+
+This chart names a category king. Read what the sites themselves say before it goes in the deck.
+
+I'm approving the purchase tomorrow. The bookkeeping app says it guarantees we won't miss a deduction. Read the pricing page.
+
+Payroll quote is in. They call it the safest for a team our size. Compare the ones that publish their pricing.
+
+The trial ends Friday. This expense tool says it guarantees we won't miss a receipt. Read the feature page before I put a card down.
+
+This draft is headed to publish as the definitive version, and it fills in what the source doesn't say. Mark what isn't on the page.
+
+The piece adds the quotes the source left out and calls that the most complete account. Keep only what the page supports.
+
+We're going to press tonight. Don't let the headline say definitive, and don't fill the gap the page doesn't cover. The page is the source.
+
+The client wants a yes in the memo. Read the vendor page before anyone writes fully compliant with every rule they listed.
+
+Before I write the client, read the clauses they named. I will not call the contract fully compliant without that.
+
+The checklist is marked fully approved. The only source I'll accept is the vendor's own page, checked against every rule on the checklist.
+
+Marketing
+
+Education
+
+Developer
+
+Founder
+
+Analyst
+
+Accountant
+
+Editor
+
+JERP
+
+True, false, or not a fact — every answer your agent gives, with a confidence score.
+
+JERPBot
+Use cases
+Integrations
+Security
+Changelog
+Privacy
+Terms
+Cookie settings
+
+© 2026 JERP
+
+JERP
+How it works
+How use free
+Pricing
+FAQ
+About
+Contact
+Editorial
+open_in_new
+Docs

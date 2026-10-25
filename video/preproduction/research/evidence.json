@@ -1,0 +1,82 @@
+[
+  {
+    "id": "E01",
+    "url": "https://getjerp.com/",
+    "section": "Three tools. The server does the rest.",
+    "quote": "Your agent sees three tools. The checks behind them run on our side, so your model never reads them.",
+    "use": "Product framing; not a universal cost guarantee.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E02",
+    "url": "https://getjerp.com/",
+    "section": "guard",
+    "quote": "Screens text, links, and actions before your AI reads or does them.",
+    "use": "Shot04 screening only.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E03",
+    "url": "https://getjerp.com/",
+    "section": "verdict",
+    "quote": "Says whether an answer is true, false, or not a fact, with a confidence score, and what to check next.",
+    "use": "Shots05–06, qualified by E06 for confidence.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E04",
+    "url": "https://getjerp.com/",
+    "section": "speaker",
+    "quote": "Gives your AI sourced facts within a size limit, so it does not guess.",
+    "use": "Shot07; film describes sourced input, not guaranteed downstream behavior.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E05",
+    "url": "https://getjerp.com/llms-full.txt",
+    "section": "Three tools / response envelope",
+    "quote": "\"true\" means supported by a returned source, not true in the world; \"not_fact\" means do not say this phrase.",
+    "use": "Show Supported by source, not universal truth.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E06",
+    "url": "https://getjerp.com/llms-full.txt",
+    "section": "response envelope",
+    "quote": "confidence (0 to 1; omitted when no calibration exists)",
+    "use": "Do not invent a score or mandatory confidence gauge.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E07",
+    "url": "https://getjerp.com/llms-full.txt",
+    "section": "Inputs by tool / speaker",
+    "quote": "sizeCap (tokens; default 1,000, max 4,000)",
+    "use": "Size limit is supported; no exact number needed in film.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E08",
+    "url": "https://getjerp.com/",
+    "section": "What JERP does not do",
+    "quote": "Complete protection from prompt injection. No detector can promise that.",
+    "use": "No unbreakable shield or all-threats-cleared graphic.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E09",
+    "url": "https://getjerp.com/",
+    "section": "Where does JERP get its information?",
+    "quote": "The free tier works on sites you name or sites already in the JERP open index; it does not crawl arbitrary URLs on demand.",
+    "use": "Single concrete input; no whole-internet scan.",
+    "matched_exact_or_normalized": true
+  },
+  {
+    "id": "E10",
+    "url": "https://getjerp.com/",
+    "section": "CTA",
+    "quote": "Stop guessing. Start checking.",
+    "use": "Use original CTA with Try Free.",
+    "matched_exact_or_normalized": true
+  }
+]

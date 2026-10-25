@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1c1c1e" />
+    <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png?v=3" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon.ico?v=3" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>JERP — Fact-Check Your AI: Fewer Tokens, No Hallucinations</title>
+    <!-- Route-specific SEO tags (description, robots, canonical, Open Graph, JSON-LD) are written at build
+         time by the prerender in vite.config.ts and kept in sync at runtime by src/ui/seoHead.ts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/fonts/bitcount-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/barlow-900.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bitcount:CRSV,ELSH,ELXP,wght@0..1,0..100,0..100,100..900&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL,GRAD,opsz,wght@0..1,0,20,400&icon_names=account_balance,ads_click,analytics,archive,arrow_downward,arrow_upward,balance,border_color,bug_report,business_center,calculate,campaign,check,checklist,chevron_left,chevron_right,close,code,compare_arrows,content_copy,contract,conversion_path,data_object,draw,edit_note,expand_more,fact_check,folder,format_quote,fullscreen,gavel,groups,history,hub,insights,key,leaderboard,left_panel_close,left_panel_open,lightbulb,lock,mail,menu_book,monitoring,newspaper,open_in_new,payments,play_arrow,policy,query_stats,quiz,receipt_long,refresh,request_quote,restart_alt,rocket_launch,rule,school,search,sell,shield,storefront,table_chart,terminal,tune,volume_off,volume_up,web&display=block" />
+    <!-- Google Tag Manager, Plerdy and Clarity load only after consent: src/ui/consent.ts (DEC-014). -->
+    <script type="module" crossorigin src="/assets/index-C3Y2cEke.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BwRGWNx0.css">
+      <meta name="description" content="JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="author" content="JERP Team" />
+    <meta name="application-name" content="JERP" />
+    <link rel="canonical" href="https://getjerp.com/" />
+    <link rel="alternate" href="https://getjerp.com/" hreflang="en" />
+    <link rel="alternate" href="https://getjerp.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://getjerp.com/llms.txt" type="text/plain" title="LLM" />
+    <link rel="alternate" href="https://getjerp.com/llms-full.txt" type="text/plain" title="LLM full" />
+    <link rel="alternate" href="https://getjerp.com/docs.md" type="text/markdown" title="Docs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JERP" />
+    <meta property="og:title" content="JERP — Fact-Check Your AI: Fewer Tokens, No Hallucinations" />
+    <meta property="og:description" content="JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free." />
+    <meta property="og:url" content="https://getjerp.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://getjerp.com/icon-512.png" />
+    <meta property="og:image:alt" content="JERP mark" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="JERP — Fact-Check Your AI: Fewer Tokens, No Hallucinations" />
+    <meta name="twitter:description" content="JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free." />
+    <meta name="twitter:image" content="https://getjerp.com/icon-512.png" />
+    <script type="application/ld+json" id="jerp-schema-org">{"@context":"https://schema.org","@type":"Organization","@id":"https://getjerp.com/#organization","name":"JERP","url":"https://getjerp.com","logo":"https://getjerp.com/icon-512.png","description":"JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free."}</script>
+    <script type="application/ld+json" id="jerp-schema-site">{"@context":"https://schema.org","@type":"WebSite","@id":"https://getjerp.com/#website","name":"JERP","url":"https://getjerp.com","description":"JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free.","publisher":{"@id":"https://getjerp.com/#organization"},"inLanguage":"en"}</script>
+    <script type="application/ld+json" id="jerp-schema-app">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://getjerp.com/#app","name":"JERP","applicationCategory":"DeveloperApplication","applicationSubCategory":"AI fact-checking","operatingSystem":"Web","url":"https://getjerp.com","description":"JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free.","featureList":["Fewer tokens: your AI reads one short answer instead of whole websites","Strict answers: true, false, or not a fact, with a confidence score","No hallucinations: claims without a source are cut","Works over MCP (Claude, Cursor, Codex and more) and a REST API"],"offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Personal","price":"0","priceCurrency":"USD"}],"publisher":{"@id":"https://getjerp.com/#organization"}}</script>
+    <script type="application/ld+json" id="jerp-schema-page">{"@context":"https://schema.org","@type":"WebPage","@id":"https://getjerp.com/#page","name":"JERP — Fact-Check Your AI: Fewer Tokens, No Hallucinations","headline":"JERP — Fact-Check Your AI: Fewer Tokens, No Hallucinations","description":"JERP fact-checks your AI: every claim comes back true, false, or not a fact, with a confidence score and a source — using far fewer tokens. Try it free.","url":"https://getjerp.com/","isPartOf":{"@id":"https://getjerp.com/#website"},"about":{"@id":"https://getjerp.com/#app"},"datePublished":"2026-01-15","dateModified":"2026-10-25","inLanguage":"en","author":{"@type":"Organization","name":"JERP Team","url":"https://getjerp.com/about"},"publisher":{"@id":"https://getjerp.com/#organization"}}</script>
+    <script type="application/ld+json" id="jerp-schema-faq">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://getjerp.com/#faq","mainEntity":[{"@type":"Question","name":"What is JERP?","acceptedAnswer":{"@type":"Answer","text":"JERP is a fact-checking layer between your AI and its answer. Your agent — Claude, ChatGPT, Cursor, or your own — asks JERP before it answers, and every answer comes back as true, false, or not a fact, with a confidence score and a source. It works over MCP and a REST API, and the free tier needs no account."}},{"@type":"Question","name":"How does JERP reduce token costs?","acceptedAnswer":{"@type":"Answer","text":"Your model stops reading whole websites. JERP reads the pages on its side and hands back a short answer, so your model reads only the result. On one measured 24-site check that is about 4,700 tokens instead of 67,800 — roughly 14× fewer. The per-model cost table is in the Pricing section above."}},{"@type":"Question","name":"How does JERP stop AI hallucinations?","acceptedAnswer":{"@type":"Answer","text":"No source, no claim. Every fact in an answer is checked against what the site itself says and against public records; anything JERP cannot source is cut instead of being guessed. When JERP is unsure, the confidence score says so rather than hiding it."}},{"@type":"Question","name":"Which tools does JERP have?","acceptedAnswer":{"@type":"Answer","text":"Three. guard screens text, links, and actions before your AI reads or does them. verdict says whether an answer is true, false, or not a fact, with a confidence score, and what to check next. speaker gives your AI sourced facts within a size limit. The checks behind them run on our side, and every result has a receipt. Setup per host is on the integrations page."}},{"@type":"Question","name":"Can JERP stop prompt injection?","acceptedAnswer":{"@type":"Answer","text":"It lowers the risk; it cannot remove it. guard treats text from pages, tools, and users as data, never as instructions, and holds back what looks like a hidden command. When it is unsure it says unclear instead of guessing. No detector can promise complete protection, and JERP does not."}},{"@type":"Question","name":"What do true, false, and not a fact mean?","acceptedAnswer":{"@type":"Answer","text":"True: a source confirms it. False: a source contradicts it. Not a fact: it is opinion or marketing — “the #1 choice”, “market leader” — and cannot be checked, so your AI should not state it as fact. Each verdict carries a confidence score."}},{"@type":"Question","name":"What does JERP store about the text I send?","acceptedAnswer":{"@type":"Answer","text":"By default, not the text. A receipt keeps a hash of the input, labels, and the policy and model versions, not your words. Storing text happens only if you opt in. Logs hold no texts and no keys. Receipts are kept for the plan period. The 1-hour key expires on its own after an hour. Details are on the privacy page and the security page."}},{"@type":"Question","name":"Is JERP secure?","acceptedAnswer":{"@type":"Answer","text":"Keys are sent only in the Authorization header, and a key in the URL is rejected. Only a keyed hash of an API key is stored. Sign-in for MCP hosts uses OAuth with PKCE; an access token lasts 1 hour. JERP has no security certification and has not had an external penetration test. What is live, what is policy, and how to report a problem is on the security page."}},{"@type":"Question","name":"Where does JERP stand on the EU AI Act?","acceptedAnswer":{"@type":"Answer","text":"JERP is built to stay outside the high-risk uses. Its rules forbid individual scores of employees, ranking of people, and emotion recognition at work, and it is not for decisions about people in areas such as hiring, education admission, credit, insurance, or access to essential services. Every verdict comes from an automated system and is marked as such. This is JERP's own position, not a certification."}},{"@type":"Question","name":"Is JERP a replacement for Ahrefs or Semrush?","acceptedAnswer":{"@type":"Answer","text":"No. Those tools crawl the web for keywords, links, and rankings. JERP checks the sites and claims your agent is already working with — real competitor or noise, fits your niche or not, sourced or not. Many teams use both."}},{"@type":"Question","name":"Does JERP measure brand mentions in ChatGPT or other AI answers?","acceptedAnswer":{"@type":"Answer","text":"No. JERP does not track how often a brand appears in AI answers. It makes the answers your own agent gives you checkable."}},{"@type":"Question","name":"Do you return Google rankings?","acceptedAnswer":{"@type":"Answer","text":"No. JERP orders sites by how well they answer your question, not by search position. It is not a SERP tracker."}},{"@type":"Question","name":"Where does JERP get its information?","acceptedAnswer":{"@type":"Answer","text":"From the sites themselves and from official public records, such as company registers. Every field in an answer names its source. The free tier works on sites you name or sites already in the JERP open index; it does not crawl arbitrary URLs on demand."}},{"@type":"Question","name":"Do I need an account or a credit card?","acceptedAnswer":{"@type":"Answer","text":"The 1-hour key needs no account. Free and Personal do. Sign in with Google or GitHub for Free: 1,000 requests a day. Personal is $0 a month for 5,000 requests and is not in public access yet."}},{"@type":"Question","name":"Is Pro or Team live yet?","acceptedAnswer":{"@type":"Answer","text":"Not yet. Pro ($9 a month) and Team ($8 per seat a month, minimum 3 seats) are not in public access yet. Free is 1,000 requests a day. Personal is $0 a month for 5,000 requests and is not in public access yet. For a higher limit or more tools, use Contact Sales."}},{"@type":"Question","name":"How do I use JERP in Claude?","acceptedAnswer":{"@type":"Answer","text":"Without an account, the connector URL ends in /open/mcp and uses the 1-hour key. With an account, the URL ends in /mcp and you choose Sign in. Then, in a chat, open + → Connectors and turn JERP on. Ready-made prompts are in the docs; all hosts are on the integrations page. Localhost URLs do not work."}},{"@type":"Question","name":"How do I use JERP in Cursor?","acceptedAnswer":{"@type":"Answer","text":"For the 1-hour key, copy the mcp.json snippet from the open MCP docs into .cursor/mcp.json. Its URL ends in /open/mcp. Replace jerp_YOUR_PUBLIC_KEY with your key and restart Cursor. An account connects to the URL ending in /mcp and signs in. That setup is in the account MCP docs."}},{"@type":"Question","name":"Can I use JERP inside ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"On ChatGPT Business, Enterprise, and Edu, yes: add a custom MCP app on the web (developer mode → Apps → Create, URL ending in /mcp, Sign in with your key). ChatGPT Free cannot attach a custom MCP server, and Pro developer mode is read-only, which is not enough. If you run your own agent, call the REST API instead."}},{"@type":"Question","name":"How do I call JERP from my own agent?","acceptedAnswer":{"@type":"Answer","text":"Call the REST API with Authorization: Bearer and your key, or attach the streamable HTTP MCP endpoint at /mcp. Both expose the same three tools (REST and client libraries). The full contract for agents is at /llms-full.txt and /docs.md."}},{"@type":"Question","name":"Why only 24 sites per call?","acceptedAnswer":{"@type":"Answer","text":"The cap keeps each round trip fast and cheap enough for a live chat. If you need more, your agent simply makes another call."}}]}</script>
+    <script type="application/ld+json" id="jerp-schema-crumbs">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://getjerp.com/"}]}</script>
+  </head>
+  <body class="is-home">
+    <main id="main" class="home-main">
+    <article class="home">
+      <div class="home-layout">
+        <div class="home-body">
+          <header class="home-hero" id="hero">
+            <div class="home-hero-top">
+              <h1 class="home-title">Confidence in the Truth</h1>
+              <p class="home-lede">JERP fact-checks your AI before it answers: every claim comes back true, false, or not a fact, with a confidence score and a source. Your model reads less, so you pay for fewer tokens. Want to know <a href="#howit">how it works</a>?</p>
+            </div>
+            <nav class="home-plaque" id="home-plaque" aria-label="Get started">
+              <div class="home-plaque-actions">
+              <div class="home-try-morph glass" id="home-try-morph">
+                <div class="home-try-morph-in">
+                  <a href="/signin" class="home-btn home-try">Try Free</a>
+                </div>
+              </div>
+              </div>
+            </nav>
+            <div class="home-hero-stage">
+            <div class="home-hero-more">
+              <p class="home-hosts-lede">Works with agents, tools, and the API, not instead of them.</p>
+              <div class="home-hosts home-hosts--compact" aria-label="Works with Claude, GPT, Copilot, Cursor, Gemini, and Windsurf">
+                <span class="home-btn home-host" data-host="Claude"><span class="home-host-mark" aria-hidden="true"></span><span class="home-host-name">Claude</span></span><span class="home-btn home-host" data-host="GPT"><span class="home-host-mark" aria-hidden="true"></span><span class="home-host-name">GPT</span></span><span class="home-btn home-host" data-host="Copilot"><span class="home-host-mark" aria-hidden="true"></span><span class="home-host-name">Copilot</span></span><span class="home-btn home-host" data-host="Cursor"><span class="home-host-mark" aria-hidden="true"></span><span class="home-host-name">Cursor</span></span><span class="home-btn home-host" data-host="Gemini"><span class="home-host-mark" aria-hidden="true"></span><span class="home-host-name">Gemini</span></span><span class="home-btn home-host" data-host="Windsurf"><span class="home-host-mark" aria-hidden="true"></span><span class="home-host-name">Windsurf</span></span>
+                <a href="#connect" class="home-btn home-host home-host-more">+19 more</a>
+              </div>
+            </div>
+            </div>
+          </header>
+
+          <section id="howit" class="home-section home-section--how">
+            <div class="home-section-in">
+            <header class="home-section-head">
+              <h2>How it works</h2>
+              <p class="home-section-lede">Algorithms do the slow, expensive work, so it comes back faster and cheaper. JERP clears the noise out of the context and keeps your AI on the right path: the course, the context, and the tone of voice stay put, so the work with it is more effective.</p>
+              <p class="home-section-lede">Play the video. It explains this in detail.</p>
+            </header>
+            <ol class="home-pillars">
+              <li class="glass home-pillar-film">
+                <video muted playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload noremoteplayback noplaybackrate" referrerpolicy="no-referrer" aria-label="JERP checks a claim before your AI says it"></video>
+                <button type="button" class="home-pillar-play" aria-label="Play with sound"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span></button>
+                <div class="home-pillar-tools">
+                  <button type="button" class="home-pillar-tool" data-act="mute" aria-label="Mute"><span class="material-symbols-outlined" aria-hidden="true">volume_up</span></button>
+                  <button type="button" class="home-pillar-tool" data-act="full" aria-label="Full screen"><span class="material-symbols-outlined" aria-hidden="true">fullscreen</span></button>
+                </div>
+                <button type="button" class="home-pillar-full" aria-label="Play"><span class="material-symbols-outlined" aria-hidden="true">play_arrow</span></button>
+              </li>
+              <li class="glass">
+                <div class="home-pillar-try"><a class="home-btn home-btn--fill" href="/signin">Try Now</a></div>
+                <span class="home-flow-head">
+                  <span class="home-flow-k"><span class="home-flow-ask">Usage limit <span class="home-flow-ask-hot">reached</span></span><span class="home-flow-save"><span class="home-flow-hl is-blue">Save tokens</span></span></span>
+                  <span class="home-flow-sub"><span class="home-flow-sub-noise">by <span class="home-flow-hl is-noise">noisy</span> context?</span><span class="home-flow-sub-clear">with <span class="home-flow-hl is-green">cleaner</span> context</span></span>
+                </span>
+                <div class="home-pillar-cost" aria-hidden="true">
+                  <div class="home-pillar-cost-panel">
+                    <div class="home-pillar-cost-row is-token">
+                      <span class="pc-bar pc-token">
+            <span class="pc-cells pc-token-layer is-ai-layer pc-n-25 pc-k-25"><i class="is-ai" style="--i:0"></i><i class="is-ai" style="--i:1"></i><i class="is-ai" style="--i:2"></i><i class="is-ai" style="--i:3"></i><i class="is-ai" style="--i:4"></i><i class="is-ai" style="--i:5"></i><i class="is-ai" style="--i:6"></i><i class="is-ai" style="--i:7"></i><i class="is-ai" style="--i:8"></i><i class="is-ai" style="--i:9"></i><i class="is-ai" style="--i:10"></i><i class="is-ai" style="--i:11"></i><i class="is-ai" style="--i:12"></i><i class="is-ai" style="--i:13"></i><i class="is-ai" style="--i:14"></i><i class="is-ai" style="--i:15"></i><i class="is-ai" style="--i:16"></i><i class="is-ai" style="--i:17"></i><i class="is-ai" style="--i:18"></i><i class="is-ai" style="--i:19"></i><i class="is-ai" style="--i:20"></i><i class="is-ai" style="--i:21"></i><i class="is-ai" style="--i:22"></i><i class="is-ai" style="--i:23"></i><i class="is-ai" style="--i:24"></i></span>
+            <span class="pc-cells pc-token-layer is-jerp-layer pc-n-25 pc-k-4"><i class="is-good" style="--i:0"></i><i class="is-good" style="--i:1"></i><i class="is-good" style="--i:2"></i><i class="is-good" style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i><i style="--i:16"></i><i style="--i:17"></i><i style="--i:18"></i><i style="--i:19"></i><i style="--i:20"></i><i style="--i:21"></i><i style="--i:22"></i><i style="--i:23"></i><i style="--i:24"></i></span>
+          </span>
+        </div>
+        </div>
+      </div>
+                <span class="home-flow-v home-flow-context" role="img" aria-label="CONTEXT"><canvas class="home-context-cloud"></canvas></span>
+              </li>
+            </ol>
+            <div class="how-story-bridge">
+              <a class="home-btn home-btn--fill how-story-plan" href="/signin">Try Now</a>
+            </div>
+            </div>
+          </section>
+
+          <section id="connect" class="home-section home-section--connect">
+            <header class="home-hero">
+            <div class="home-hero-top">
+              <h2 class="home-title">How use free</h2>
+              <p class="home-section-lede">No account required. Each key lasts 1 hour and allows 100 requests. Use it for a demo, a test, or a benchmark — we do not recommend daily use. For a higher limit and safe storage of your data in Jerp cloud, <a href="/signin">create an account</a> and <a href="#pricing">pick a plan</a>.</p>
+            </div>
+            
+            <div class="home-hero-stage">
+            <div class="home-hero-more">
+              <div class="home-open-act">
+                <div class="home-door-switch" role="group" aria-label="Open endpoint">
+                    <span class="home-btn home-door-bubble" aria-hidden="true"></span>
+                    <button type="button" class="home-door-opt" data-door="mcp" aria-pressed="true">MCP</button>
+                    <button type="button" class="home-door-opt" data-door="api" aria-pressed="false">API</button>
+                  </div>
+                <div class="home-open-fields">
+              <div class="home-connect-key">
+                <div class="home-door-pair">
+                  <div class="home-btn home-door-field">
+                    <button type="button" class="home-try-copy home-door-copy" aria-label="Copy open MCP URL">
+                      <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                    </button>
+                    <span class="home-door-url">/open/mcp</span>
+                  </div>
+                </div>
+                <div class="home-key-pair">
+                <p class="home-try-ttl" id="connect-home-try-ttl">The hour starts when you click</p>
+                <div class="home-try-key-row">
+                  <div class="home-btn home-try-key" id="connect-home-try-key-shell">
+                    <button type="button" class="home-try-copy" id="connect-home-try-copy" aria-label="Copy API key">
+                      <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                    </button>
+                    <button type="button" class="home-try-key-hit" id="connect-home-try-key" aria-pressed="false" aria-label="Show API key">
+                      <span class="home-try-key-value" id="connect-home-try-key-mark"></span>
+                      <span class="home-try-kicker">GET FREE API KEY</span>
+                    </button>
+                  </div>
+                  <button type="button" class="home-try-analytics" aria-label="Analytics">
+                    <svg viewBox="0 -960 960 960" aria-hidden="true">
+                      <path fill="currentColor" d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              </div>
+                  <div class="home-launch">
+                <div class="home-launch-pair">
+                <p class="home-launch-k">Just copy this and give it to your AI.</p>
+                <div class="home-launch-field">
+                  <button type="button" class="home-launch-icon material-symbols-outlined" aria-label="Copy prompt to start JERP">content_copy</button>
+                  <span class="home-launch-text">Install the JERP skills from https://github.com/jerp-ai and use the MCP tools.</span>
+                </div>
+                </div>
+                <div class="home-launch-pair is-api">
+                <p class="home-launch-k">Just copy this and give it to your AI.</p>
+                <div class="home-launch-field">
+                  <button type="button" class="home-launch-icon material-symbols-outlined" aria-label="Copy prompt to learn the API">content_copy</button>
+                  <span class="home-launch-text">Tell me where I can learn how to use the JERP API: https://getjerp.com/docs#open-api</span>
+                </div>
+                </div>
+              </div>
+                </div>
+              </div>
+              <div class="home-open-copy">
+                <h3 class="home-open-mark">OPEN JERP</h3>
+                <p class="home-open-lead">Connect MCP using your AI's connector or plugin. The walkthrough for your setup is in the <a href="/docs#open-mcp">open MCP</a> and <a href="/docs#open-api">open API</a> docs. Open traffic is what trains JERP: before anything is kept, names, emails, and other private details are swapped for placeholders, so the store holds the shape of the request — not your real data.</p>
+              </div>
+              <ul class="home-open-hosts" aria-label="Works with Claude, Copilot, Cursor, Cline, Windsurf, JetBrains, Warp, Zed, Perplexity, ChatGPT, Gemini, VS Code, Continue, n8n, Make, Zapier, Pipedream, LangChain, LlamaIndex, Vercel, Dify, Flowise, Botpress, and Voiceflow">
+                <li data-host="Claude"><span class="home-host-mark" aria-hidden="true"></span><span>Claude</span></li><li data-host="Copilot"><span class="home-host-mark" aria-hidden="true"></span><span>Copilot</span></li><li data-host="Cursor"><span class="home-host-mark" aria-hidden="true"></span><span>Cursor</span></li><li data-host="Cline"><span class="home-host-mark" aria-hidden="true"></span><span>Cline</span></li><li data-host="Windsurf"><span class="home-host-mark" aria-hidden="true"></span><span>Windsurf</span></li><li data-host="JetBrains"><span class="home-host-mark" aria-hidden="true"></span><span>JetBrains</span></li><li data-host="Warp"><span class="home-host-mark" aria-hidden="true"></span><span>Warp</span></li><li data-host="Zed"><span class="home-host-mark" aria-hidden="true"></span><span>Zed</span></li><li data-host="Perplexity"><span class="home-host-mark" aria-hidden="true"></span><span>Perplexity</span></li><li data-host="ChatGPT"><span class="home-host-mark" aria-hidden="true"></span><span>ChatGPT</span></li><li data-host="Gemini"><span class="home-host-mark" aria-hidden="true"></span><span>Gemini</span></li><li data-host="VS Code"><span class="home-host-mark" aria-hidden="true"></span><span>VS Code</span></li><li data-host="Continue"><span class="home-host-mark" aria-hidden="true"></span><span>Continue</span></li><li data-host="n8n"><span class="home-host-mark" aria-hidden="true"></span><span>n8n</span></li><li data-host="Make"><span class="home-host-mark" aria-hidden="true"></span><span>Make</span></li><li data-host="Zapier"><span class="home-host-mark" aria-hidden="true"></span><span>Zapier</span></li><li data-host="Pipedream"><span class="home-host-mark" aria-hidden="true"></span><span>Pipedream</span></li><li data-host="LangChain"><span class="home-host-mark" aria-hidden="true"></span><span>LangChain</span></li><li data-host="LlamaIndex"><span class="home-host-mark" aria-hidden="true"></span><span>LlamaIndex</span></li><li data-host="Vercel"><span class="home-host-mark" aria-hidden="true"></span><span>Vercel</span></li><li data-host="Dify"><span class="home-host-mark" aria-hidden="true"></span><span>Dify</span></li><li data-host="Flowise"><span class="home-host-mark" aria-hidden="true"></span><span>Flowise</span></li><li data-host="Botpress"><span class="home-host-mark" aria-hidden="true"></span><span>Botpress</span></li><li data-host="Voiceflow"><span class="home-host-mark" aria-hidden="true"></span><span>Voiceflow</span></li>
+              </ul>
+            </div>
+            </div>
+          </header>
+          </section>
+
+          <section id="pricing" class="home-section home-section--pricing">
+            <div class="home-section-in">
+            <header class="home-section-head">
+              <h2>Pricing and personalisation</h2>
+              <p class="home-section-lede">Start free. A few steps, and your AI works more effectively. Choose a plan for what you need.</p>
+            </header>
+            <ul class="home-plans">
+              <li class="glass home-plan-card">
+    <header class="home-plan-head">
+      <span class="home-flow-k">Free</span>
+      <p class="home-plan-price"><strong class="home-plan-now">$0</strong><span>/mo</span></p>
+    </header>
+    <ul class="home-plan-features">
+      <li>Data stored in the cloud</li><li>1,000 requests a day</li><li>Signals for your interests</li><li>AI antivirus</li><li>3 million tokens of context</li>
+    </ul>
+    <a href="/signin" class="home-btn home-plan-cta home-btn--fill">Start Free</a>
+  </li>
+    <li class="home-plans-soon">
+      <ul class="home-plans-soon-cards" inert>
+        <li class="glass home-plan-card">
+    <header class="home-plan-head">
+      <span class="home-flow-k">Personal</span>
+      <p class="home-plan-price"><strong>$0</strong><span>/mo</span></p>
+    </header>
+    <ul class="home-plan-features">
+      <li>Everything in Free</li><li>5,000 requests a day</li><li>Profiles</li><li>Auto instructions</li><li>20 million tokens of context</li><li>Calibrates and recalibrates</li><li>Context snapshot</li><li>Personal analytics</li><li>Full backup</li><li>Trained on quality paid data</li>
+    </ul>
+    <a href="/signin" class="home-btn home-plan-cta">Get Personal</a>
+  </li><li class="glass home-plan-card">
+    <header class="home-plan-head">
+      <span class="home-flow-k">Pro</span>
+      <p class="home-plan-price"><strong>$9</strong><span>/mo</span></p>
+    </header>
+    <ul class="home-plan-features">
+      <li>Everything in Free</li><li>5,000 requests a day</li><li>Profiles</li><li>Auto instructions</li><li>20 million tokens of context</li><li>Calibrates and recalibrates</li><li>Context snapshot</li><li>Personal analytics</li><li>Full backup</li><li>Trained on quality paid data</li>
+    </ul>
+    <a href="/signin" class="home-btn home-plan-cta">Get Pro</a>
+  </li><li class="glass home-plan-card">
+    <header class="home-plan-head">
+      <span class="home-flow-k">Team</span>
+      <p class="home-plan-price"><strong>$8</strong><span>/seat/mo</span></p>
+    </header>
+    <ul class="home-plan-features">
+      <li>Minimum 3 seats</li><li>Organisation and policies</li><li>Audit log</li><li>Everything in Pro, per seat</li>
+    </ul>
+    <a href="/contact" class="home-btn home-plan-cta">Contact Sales</a>
+  </li>
+      </ul>
+      <div class="home-plans-soon-cover">
+        <p class="home-plans-soon-k">Coming Soon</p>
+        <p class="home-plans-soon-copy">Only Free is open. Personal, Pro and Team are not in public access yet.</p>
+        <a class="home-btn" href="/contact">Contact Sales</a>
+      </div>
+  </li>
+            </ul>
+            <p class="home-plan-note">Everything is free right now. The <a href="#connect">open key</a> on this page needs no account.</p>
+            
+            </div>
+          </section>
+
+          <div class="how-story" style="--story-beats: 4; --credits-n: 24" aria-label="How JERP reads one question">
+              <div class="how-story-stage">
+                <p class="how-story-fit">All of this fits.</p>
+                <div class="how-story-credits" data-nosnippet>
+                  <div class="how-story-credits-track">
+                    <p class="how-story-prompt" data-dir="Marketing">A small agency is picking a <mark class="how-story-mark is-jerp" style="--i: 0">time tracker</mark>. They want <mark class="how-story-mark is-cut" style="--i: 1">the best one</mark> and <mark class="how-story-mark is-cut" style="--i: 2">the most popular one</mark>. A few homepages say you can <mark class="how-story-mark is-good" style="--i: 3">try them free</mark>. Check the pages before anyone crowns a winner.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Marketing">The client wants an <mark class="how-story-mark is-jerp" style="--i: 0">email tool</mark> bought off <mark class="how-story-mark is-jerp" style="--i: 1">the pricing page</mark>: <mark class="how-story-mark is-cut" style="--i: 2">the one every team recommends</mark>, with <mark class="how-story-mark is-cut" style="--i: 3">the highest open rates</mark>. Say only what those pages support.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Marketing">We launch Monday. This <mark class="how-story-mark is-jerp" style="--i: 0">landing-page builder</mark> is sold as <mark class="how-story-mark is-cut" style="--i: 1">the fastest to launch</mark>. Compare <mark class="how-story-mark is-jerp" style="--i: 2">the ones with a public changelog</mark> and leave out anything the pages don't say.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Education">Budget meeting is tomorrow. The sales deck says this <mark class="how-story-mark is-jerp" style="--i: 0">classroom tool</mark> <mark class="how-story-mark is-cut" style="--i: 1">raises test scores the most</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the product page</mark> before I forward it.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Education">Renewal is on my desk. The quote calls this <mark class="how-story-mark is-jerp" style="--i: 0">reading app</mark> <mark class="how-story-mark is-cut" style="--i: 1">the most loved by teachers</mark>, including <mark class="how-story-mark is-jerp" style="--i: 2">the ones we already pay for</mark>. Check those pages.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Education">The dean asked about a <mark class="how-story-mark is-jerp" style="--i: 0">quiz tool</mark>. The homepage says it <mark class="how-story-mark is-cut" style="--i: 1">guarantees better grades</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the product pages</mark> before I reply.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Developer">Before we ship, check <mark class="how-story-mark is-jerp" style="--i: 0">the sample key in the README</mark>. The page says it <mark class="how-story-mark is-cut" style="--i: 1">never expires</mark> and grants <mark class="how-story-mark is-cut" style="--i: 2">full access</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Developer">Review this before it merges: <mark class="how-story-mark is-jerp" style="--i: 0">if (!req.headers.authorization) return 200</mark>. The comment says that is <mark class="how-story-mark is-cut" style="--i: 1">safe</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Developer">We're signing the annual plan tomorrow. <mark class="how-story-mark is-jerp" style="--i: 0">The status page</mark> says the API <mark class="how-story-mark is-cut" style="--i: 1">never drops a webhook</mark>. Read that page and <mark class="how-story-mark is-jerp" style="--i: 2">the pricing page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Founder">The deck says we should run the company on the tool <mark class="how-story-mark is-cut" style="--i: 0">every startup switches to</mark>. Compare <mark class="how-story-mark is-jerp" style="--i: 1">the ones teams our size already use</mark> and cut the slogan.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Founder">We're about to pay for the year. The <mark class="how-story-mark is-jerp" style="--i: 0">CRM page</mark> says it's <mark class="how-story-mark is-cut" style="--i: 1">what investors expect</mark> and <mark class="how-story-mark is-cut" style="--i: 2">the default for a company our size</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 3">the pricing page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Founder">Demo is booked. <mark class="how-story-mark is-jerp" style="--i: 0">The hiring tool's homepage</mark> says <mark class="how-story-mark is-cut" style="--i: 1">every startup switches to it</mark>. Read it before I take the call.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Analyst">For the board memo, read <mark class="how-story-mark is-jerp" style="--i: 0">this shortlist of homepages</mark>. Say who calls themselves <mark class="how-story-mark is-cut" style="--i: 1">the market leader</mark>. Don't pick one for me.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Analyst">The competitor slide needs a source. <mark class="how-story-mark is-jerp" style="--i: 0">This shortlist</mark> is not <mark class="how-story-mark is-cut" style="--i: 1">our closest competitor</mark> until a homepage says so. Read them.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Analyst">This chart names <mark class="how-story-mark is-cut" style="--i: 0">a category king</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 1">what the sites themselves say</mark> before it goes in the deck.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Accountant">I'm approving the purchase tomorrow. The <mark class="how-story-mark is-jerp" style="--i: 0">bookkeeping app</mark> says it <mark class="how-story-mark is-cut" style="--i: 1">guarantees we won't miss a deduction</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the pricing page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Accountant">Payroll quote is in. They call it <mark class="how-story-mark is-cut" style="--i: 0">the safest for a team our size</mark>. Compare <mark class="how-story-mark is-jerp" style="--i: 1">the ones that publish their pricing</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Accountant">The trial ends Friday. This <mark class="how-story-mark is-jerp" style="--i: 0">expense tool</mark> says it <mark class="how-story-mark is-cut" style="--i: 1">guarantees we won't miss a receipt</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the feature page</mark> before I put a card down.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Editor">This draft is headed to publish as <mark class="how-story-mark is-cut" style="--i: 0">the definitive version</mark>, and it <mark class="how-story-mark is-cut" style="--i: 1">fills in what the source doesn't say</mark>. Mark what isn't on <mark class="how-story-mark is-jerp" style="--i: 2">the page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Editor">The piece adds <mark class="how-story-mark is-cut" style="--i: 0">the quotes the source left out</mark> and calls that <mark class="how-story-mark is-cut" style="--i: 1">the most complete account</mark>. Keep only what <mark class="how-story-mark is-jerp" style="--i: 2">the page</mark> supports.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Editor">We're going to press tonight. Don't let the headline say <mark class="how-story-mark is-cut" style="--i: 0">definitive</mark>, and don't fill <mark class="how-story-mark is-cut" style="--i: 1">the gap the page doesn't cover</mark>. <mark class="how-story-mark is-jerp" style="--i: 2">The page</mark> is the source.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Lawyer">The client wants a yes in the memo. Read <mark class="how-story-mark is-jerp" style="--i: 0">the vendor page</mark> before anyone writes <mark class="how-story-mark is-cut" style="--i: 1">fully compliant</mark> with <mark class="how-story-mark is-cut" style="--i: 2">every rule they listed</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Lawyer">Before I write the client, read <mark class="how-story-mark is-jerp" style="--i: 0">the clauses they named</mark>. I will not call the contract <mark class="how-story-mark is-cut" style="--i: 1">fully compliant</mark> without that.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Lawyer">The checklist is marked <mark class="how-story-mark is-cut" style="--i: 0">fully approved</mark>. The only source I'll accept is <mark class="how-story-mark is-jerp" style="--i: 1">the vendor's own page</mark>, checked against <mark class="how-story-mark is-cut" style="--i: 2">every rule on the checklist</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Marketing">A small agency is picking a <mark class="how-story-mark is-jerp" style="--i: 0">time tracker</mark>. They want <mark class="how-story-mark is-cut" style="--i: 1">the best one</mark> and <mark class="how-story-mark is-cut" style="--i: 2">the most popular one</mark>. A few homepages say you can <mark class="how-story-mark is-good" style="--i: 3">try them free</mark>. Check the pages before anyone crowns a winner.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Marketing">The client wants an <mark class="how-story-mark is-jerp" style="--i: 0">email tool</mark> bought off <mark class="how-story-mark is-jerp" style="--i: 1">the pricing page</mark>: <mark class="how-story-mark is-cut" style="--i: 2">the one every team recommends</mark>, with <mark class="how-story-mark is-cut" style="--i: 3">the highest open rates</mark>. Say only what those pages support.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Marketing">We launch Monday. This <mark class="how-story-mark is-jerp" style="--i: 0">landing-page builder</mark> is sold as <mark class="how-story-mark is-cut" style="--i: 1">the fastest to launch</mark>. Compare <mark class="how-story-mark is-jerp" style="--i: 2">the ones with a public changelog</mark> and leave out anything the pages don't say.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Education">Budget meeting is tomorrow. The sales deck says this <mark class="how-story-mark is-jerp" style="--i: 0">classroom tool</mark> <mark class="how-story-mark is-cut" style="--i: 1">raises test scores the most</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the product page</mark> before I forward it.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Education">Renewal is on my desk. The quote calls this <mark class="how-story-mark is-jerp" style="--i: 0">reading app</mark> <mark class="how-story-mark is-cut" style="--i: 1">the most loved by teachers</mark>, including <mark class="how-story-mark is-jerp" style="--i: 2">the ones we already pay for</mark>. Check those pages.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Education">The dean asked about a <mark class="how-story-mark is-jerp" style="--i: 0">quiz tool</mark>. The homepage says it <mark class="how-story-mark is-cut" style="--i: 1">guarantees better grades</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the product pages</mark> before I reply.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Developer">Before we ship, check <mark class="how-story-mark is-jerp" style="--i: 0">the sample key in the README</mark>. The page says it <mark class="how-story-mark is-cut" style="--i: 1">never expires</mark> and grants <mark class="how-story-mark is-cut" style="--i: 2">full access</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Developer">Review this before it merges: <mark class="how-story-mark is-jerp" style="--i: 0">if (!req.headers.authorization) return 200</mark>. The comment says that is <mark class="how-story-mark is-cut" style="--i: 1">safe</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Developer">We're signing the annual plan tomorrow. <mark class="how-story-mark is-jerp" style="--i: 0">The status page</mark> says the API <mark class="how-story-mark is-cut" style="--i: 1">never drops a webhook</mark>. Read that page and <mark class="how-story-mark is-jerp" style="--i: 2">the pricing page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Founder">The deck says we should run the company on the tool <mark class="how-story-mark is-cut" style="--i: 0">every startup switches to</mark>. Compare <mark class="how-story-mark is-jerp" style="--i: 1">the ones teams our size already use</mark> and cut the slogan.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Founder">We're about to pay for the year. The <mark class="how-story-mark is-jerp" style="--i: 0">CRM page</mark> says it's <mark class="how-story-mark is-cut" style="--i: 1">what investors expect</mark> and <mark class="how-story-mark is-cut" style="--i: 2">the default for a company our size</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 3">the pricing page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Founder">Demo is booked. <mark class="how-story-mark is-jerp" style="--i: 0">The hiring tool's homepage</mark> says <mark class="how-story-mark is-cut" style="--i: 1">every startup switches to it</mark>. Read it before I take the call.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Analyst">For the board memo, read <mark class="how-story-mark is-jerp" style="--i: 0">this shortlist of homepages</mark>. Say who calls themselves <mark class="how-story-mark is-cut" style="--i: 1">the market leader</mark>. Don't pick one for me.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Analyst">The competitor slide needs a source. <mark class="how-story-mark is-jerp" style="--i: 0">This shortlist</mark> is not <mark class="how-story-mark is-cut" style="--i: 1">our closest competitor</mark> until a homepage says so. Read them.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Analyst">This chart names <mark class="how-story-mark is-cut" style="--i: 0">a category king</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 1">what the sites themselves say</mark> before it goes in the deck.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Accountant">I'm approving the purchase tomorrow. The <mark class="how-story-mark is-jerp" style="--i: 0">bookkeeping app</mark> says it <mark class="how-story-mark is-cut" style="--i: 1">guarantees we won't miss a deduction</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the pricing page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Accountant">Payroll quote is in. They call it <mark class="how-story-mark is-cut" style="--i: 0">the safest for a team our size</mark>. Compare <mark class="how-story-mark is-jerp" style="--i: 1">the ones that publish their pricing</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Accountant">The trial ends Friday. This <mark class="how-story-mark is-jerp" style="--i: 0">expense tool</mark> says it <mark class="how-story-mark is-cut" style="--i: 1">guarantees we won't miss a receipt</mark>. Read <mark class="how-story-mark is-jerp" style="--i: 2">the feature page</mark> before I put a card down.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Editor">This draft is headed to publish as <mark class="how-story-mark is-cut" style="--i: 0">the definitive version</mark>, and it <mark class="how-story-mark is-cut" style="--i: 1">fills in what the source doesn't say</mark>. Mark what isn't on <mark class="how-story-mark is-jerp" style="--i: 2">the page</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Editor">The piece adds <mark class="how-story-mark is-cut" style="--i: 0">the quotes the source left out</mark> and calls that <mark class="how-story-mark is-cut" style="--i: 1">the most complete account</mark>. Keep only what <mark class="how-story-mark is-jerp" style="--i: 2">the page</mark> supports.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Editor">We're going to press tonight. Don't let the headline say <mark class="how-story-mark is-cut" style="--i: 0">definitive</mark>, and don't fill <mark class="how-story-mark is-cut" style="--i: 1">the gap the page doesn't cover</mark>. <mark class="how-story-mark is-jerp" style="--i: 2">The page</mark> is the source.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Lawyer">The client wants a yes in the memo. Read <mark class="how-story-mark is-jerp" style="--i: 0">the vendor page</mark> before anyone writes <mark class="how-story-mark is-cut" style="--i: 1">fully compliant</mark> with <mark class="how-story-mark is-cut" style="--i: 2">every rule they listed</mark>.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Lawyer">Before I write the client, read <mark class="how-story-mark is-jerp" style="--i: 0">the clauses they named</mark>. I will not call the contract <mark class="how-story-mark is-cut" style="--i: 1">fully compliant</mark> without that.</p><p class="how-story-prompt" aria-hidden="true" data-dir="Lawyer">The checklist is marked <mark class="how-story-mark is-cut" style="--i: 0">fully approved</mark>. The only source I'll accept is <mark class="how-story-mark is-jerp" style="--i: 1">the vendor's own page</mark>, checked against <mark class="how-story-mark is-cut" style="--i: 2">every rule on the checklist</mark>.</p>
+        </div>
+      </div>
+                <div class="how-story-aside">
+                  <div class="how-story-roulette" aria-live="polite">
+                    <p class="how-story-roulette-item is-now" style="--step: 0">Marketing</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 1">Education</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 2">Developer</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 3">Founder</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 4">Analyst</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 5">Accountant</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 6">Editor</p><p class="how-story-roulette-item" aria-hidden="true" style="--step: 7">Lawyer</p>
+        </div>
+        </div>
+          </div>
+  </div>
+
+          <section id="tools" class="home-section home-section--tools">
+            <div class="home-section-in">
+            <header class="home-section-head">
+              <h2>Three tools. The server does the rest.</h2>
+              <p class="home-section-lede">Your agent sees three tools. The checks behind them run on our side, so your model never reads them.</p>
+            </header>
+            <ul class="home-caps home-three-tools" aria-label="The three tools">
+              <li class="glass">
+                <span class="home-flow-k">guard</span>
+                <p class="home-flow-v">Screens text, links, and actions before your AI reads or does them.</p>
+              </li><li class="glass">
+                <span class="home-flow-k">verdict</span>
+                <p class="home-flow-v">Says whether an answer is true, false, or not a fact, with a confidence score, and what to check next.</p>
+              </li><li class="glass">
+                <span class="home-flow-k">speaker</span>
+                <p class="home-flow-v">Gives your AI sourced facts within a size limit, so it does not guess.</p>
+              </li>
+            </ul>
+            <p class="home-plan-note">Every result has a receipt you can export. Connect your host: <a href="/integrations">integrations</a>.</p>
+            </div>
+          </section>
+
+          <section id="limits-honest" class="home-section home-section--honest">
+            <div class="home-section-in">
+            <header class="home-section-head">
+              <h2>What JERP does not do</h2>
+              <p class="home-section-lede">Know the limits before you rely on it.</p>
+            </header>
+            <div class="glass home-honest">
+              <ul class="home-plan-features home-honest-list">
+                <li>Complete protection from prompt injection. No detector can promise that.</li><li>Detection of deepfake video or audio.</li><li>Antivirus, file scanning, or device protection.</li><li>KYC, AML, or sanctions screening.</li><li>Legal, medical, or financial advice, or investment recommendations.</li><li>Refunds or insurance for fraud.</li><li>An explanation of why a business metric changed.</li><li>Review scores or paid review feeds.</li><li>Judgements about people: hiring, credit, insurance, access to services, or performance.</li><li>An uptime guarantee beyond the stated service level.</li>
+              </ul>
+            </div>
+            </div>
+          </section>
+
+          <section id="faq" class="home-section home-section--faq">
+            <div class="home-section-in">
+            <header class="home-section-head">
+              <h2>Questions about JERP</h2>
+              <h3 class="home-section-lede">The most common questions about JERP, with a short answer to each.</h3>
+            </header>
+            <div class="home-faq">
+              <details><summary>What is JERP?</summary><p>JERP is a fact-checking layer between your AI and its answer. Your agent — Claude, ChatGPT, Cursor, or your own — asks JERP before it answers, and every answer comes back as true, false, or not a fact, with a confidence score and a source. It works over MCP and a REST API, and the free tier needs no account.</p></details>
+              <details><summary>How does JERP reduce token costs?</summary><p>Your model stops reading whole websites. JERP reads the pages on its side and hands back a short answer, so your model reads only the result. On one measured 24-site check that is about 4,700 tokens instead of 67,800 — roughly 14× fewer. The per-model cost table is in the Pricing section above.</p></details>
+              <details><summary>How does JERP stop AI hallucinations?</summary><p>No source, no claim. Every fact in an answer is checked against what the site itself says and against public records; anything JERP cannot source is cut instead of being guessed. When JERP is unsure, the confidence score says so rather than hiding it.</p></details>
+              <details><summary>Which tools does JERP have?</summary><p>Three. <strong>guard</strong> screens text, links, and actions before your AI reads or does them. <strong>verdict</strong> says whether an answer is true, false, or not a fact, with a confidence score, and what to check next. <strong>speaker</strong> gives your AI sourced facts within a size limit. The checks behind them run on our side, and every result has a receipt. Setup per host is on the <a href="/integrations">integrations page</a>.</p></details>
+              <details><summary>Can JERP stop prompt injection?</summary><p>It lowers the risk; it cannot remove it. guard treats text from pages, tools, and users as data, never as instructions, and holds back what looks like a hidden command. When it is unsure it says <code>unclear</code> instead of guessing. No detector can promise complete protection, and JERP does not.</p></details>
+              <details><summary>What do true, false, and not a fact mean?</summary><p>True: a source confirms it. False: a source contradicts it. Not a fact: it is opinion or marketing — “the #1 choice”, “market leader” — and cannot be checked, so your AI should not state it as fact. Each verdict carries a confidence score.</p></details>
+              <details><summary>What does JERP store about the text I send?</summary><p>By default, not the text. A receipt keeps a hash of the input, labels, and the policy and model versions, not your words. Storing text happens only if you opt in. Logs hold no texts and no keys. Receipts are kept for the plan period. The 1-hour key expires on its own after an hour. Details are on the <a href="/privacy">privacy page</a> and the <a href="/security">security page</a>.</p></details>
+              <details><summary>Is JERP secure?</summary><p>Keys are sent only in the Authorization header, and a key in the URL is rejected. Only a keyed hash of an API key is stored. Sign-in for MCP hosts uses OAuth with PKCE; an access token lasts 1 hour. JERP has no security certification and has not had an external penetration test. What is live, what is policy, and how to report a problem is on the <a href="/security">security page</a>.</p></details>
+              <details><summary>Where does JERP stand on the EU AI Act?</summary><p>JERP is built to stay outside the high-risk uses. Its rules forbid individual scores of employees, ranking of people, and emotion recognition at work, and it is not for decisions about people in areas such as hiring, education admission, credit, insurance, or access to essential services. Every verdict comes from an automated system and is marked as such. This is JERP's own position, not a certification.</p></details>
+              <details><summary>Is JERP a replacement for Ahrefs or Semrush?</summary><p>No. Those tools crawl the web for keywords, links, and rankings. JERP checks the sites and claims your agent is already working with — real competitor or noise, fits your niche or not, sourced or not. Many teams use both.</p></details>
+              <details><summary>Does JERP measure brand mentions in ChatGPT or other AI answers?</summary><p>No. JERP does not track how often a brand appears in AI answers. It makes the answers your own agent gives you checkable.</p></details>
+              <details><summary>Do you return Google rankings?</summary><p>No. JERP orders sites by how well they answer your question, not by search position. It is not a SERP tracker.</p></details>
+              <details><summary>Where does JERP get its information?</summary><p>From the sites themselves and from official public records, such as company registers. Every field in an answer names its source. The free tier works on sites you name or sites already in the JERP open index; it does not crawl arbitrary URLs on demand.</p></details>
+              <details><summary>Do I need an account or a credit card?</summary><p>The 1-hour key needs no account. Free and Personal do. Sign in with Google or GitHub for Free: 1,000 requests a day. Personal is $0 a month for 5,000 requests and is not in public access yet.</p></details>
+              <details><summary>Is Pro or Team live yet?</summary><p>Not yet. Pro ($9 a month) and Team ($8 per seat a month, minimum 3 seats) are not in public access yet. Free is 1,000 requests a day. Personal is $0 a month for 5,000 requests and is not in public access yet. For a higher limit or more tools, use Contact Sales.</p></details>
+              <details><summary>How do I use JERP in Claude?</summary><p>Without an account, the connector URL ends in /open/mcp and uses the 1-hour key. With an account, the URL ends in /mcp and you choose Sign in. Then, in a chat, open + → Connectors and turn JERP on. Ready-made prompts are in the <a href="/docs#prompts">docs</a>; all hosts are on the <a href="/integrations">integrations page</a>. Localhost URLs do not work.</p></details>
+              <details><summary>How do I use JERP in Cursor?</summary><p>For the 1-hour key, copy the mcp.json snippet from the <a href="/docs#open-mcp">open MCP docs</a> into <code>.cursor/mcp.json</code>. Its URL ends in /open/mcp. Replace <code>jerp_YOUR_PUBLIC_KEY</code> with your key and restart Cursor. An account connects to the URL ending in /mcp and signs in. That setup is in the <a href="/docs#mcp">account MCP docs</a>.</p></details>
+              <details><summary>Can I use JERP inside ChatGPT?</summary><p>On ChatGPT Business, Enterprise, and Edu, yes: add a custom MCP app on the web (developer mode → Apps → Create, URL ending in /mcp, Sign in with your key). ChatGPT Free cannot attach a custom MCP server, and Pro developer mode is read-only, which is not enough. If you run your own agent, call the REST API instead.</p></details>
+              <details><summary>How do I call JERP from my own agent?</summary><p>Call the REST API with <code>Authorization: Bearer</code> and your key, or attach the streamable HTTP MCP endpoint at <code>/mcp</code>. Both expose the same three tools (<a href="/integrations#rest">REST and client libraries</a>). The full contract for agents is at <a href="/llms-full.txt">/llms-full.txt</a> and <a href="/docs.md">/docs.md</a>.</p></details>
+              <details><summary>Why only 24 sites per call?</summary><p>The cap keeps each round trip fast and cheap enough for a live chat. If you need more, your agent simply makes another call.</p></details>
+            </div>
+            </div>
+          </section>
+
+          <section id="start" class="home-section home-section--start">
+            <div class="home-section-in home-start">
+              <p class="home-start-title">Stop guessing. Start checking.</p>
+              <p class="home-start-lede">Ask your agent one real question. Get a verdict, not a guess.</p>
+              <a href="/signin" class="home-btn home-btn--fill home-start-cta">Try Free</a>
+            </div>
+          </section>
+
+          <footer class="home-footer">
+            <p class="home-footer-brand">JERP</p>
+            <p class="home-footer-tagline">True, false, or not a fact — every answer your agent gives, with a confidence score.</p>
+            <nav class="home-footer-nav home-footer-nav--body" aria-label="Legal and company"><a class="is-company" href="/about" data-label="About">About</a><a class="is-company" href="/contact" data-label="Contact">Contact</a><a class="is-company" href="/editorial" data-label="Editorial">Editorial</a><a class="is-crawler" href="/bot" data-label="JERPBot">JERPBot</a><a class="is-explore" href="/use-cases" data-label="Use cases">Use cases</a><a class="is-explore" href="/integrations" data-label="Integrations">Integrations</a><a class="is-explore" href="/security" data-label="Security">Security</a><a class="is-explore" href="/changelog" data-label="Changelog">Changelog</a><a class="is-legal" href="/privacy" data-label="Privacy">Privacy</a><a class="is-legal" href="/terms" data-label="Terms">Terms</a><a class="is-legal" href="#cookies" role="button" data-consent-open data-label="Cookie settings">Cookie settings</a></nav>
+            <p class="home-footer-copy">© 2026 JERP</p>
+          </footer>
+
+        </div>
+
+        
+    <aside class="home-rail">
+      <div class="home-brand">
+        <a class="home-logo" href="#hero">JERP</a>
+        <span class="home-logo-orb" aria-hidden="true"><span class="home-logo-orb-drop"></span></span>
+        <button type="button" class="home-burger" aria-label="Open menu" aria-expanded="false" aria-controls="home-toc">
+          <span class="home-burger-bead" aria-hidden="true"></span>
+          <span class="home-burger-bead" aria-hidden="true"></span>
+          <span class="home-burger-bead" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="home-navcol">
+        <nav class="home-toc" id="home-toc" aria-label="On this page">
+          <a href="#howit">How it works</a><a href="#connect">How use free</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+          <a class="home-toc-page" href="/docs" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined home-toc-page-icon" aria-hidden="true">open_in_new</span><span class="home-toc-page-label">Docs</span></a>
+          
+        </nav>
+        <div class="home-rail-end">
+          <nav class="home-footer-nav home-rail-foot" aria-label="Legal and company"><a class="is-company" href="/about" data-label="About">About</a><a class="is-company" href="/contact" data-label="Contact">Contact</a><a class="is-company" href="/editorial" data-label="Editorial">Editorial</a><a class="is-legal" href="/privacy" data-label="Privacy">Privacy</a><a class="is-legal" href="/terms" data-label="Terms">Terms</a><a class="home-toc-page" href="/docs" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined home-toc-page-icon" aria-hidden="true">open_in_new</span><span class="home-toc-page-label">Docs</span></a></nav>
+          <nav class="home-social home-social--rail" aria-label="Community"><a class="home-social-link" href="https://github.com/jerp-ai" target="_blank" rel="noopener noreferrer"><span class="home-social-mark" role="img" aria-label="GitHub" data-social="github"></span></a><span class="home-social-link is-soon" hidden title="X"><span class="home-social-mark" role="img" aria-label="X" data-social="x"></span></span><a class="home-social-link" href="https://www.threads.net/@jerp.ai" target="_blank" rel="noopener noreferrer"><span class="home-social-mark" role="img" aria-label="Threads" data-social="threads"></span></a><span class="home-social-link is-soon" hidden title="Reddit"><span class="home-social-mark" role="img" aria-label="Reddit" data-social="reddit"></span></span><span class="home-social-link is-soon" hidden title="Discord"><span class="home-social-mark" role="img" aria-label="Discord" data-social="discord"></span></span></nav>
+        </div>
+      </div>
+    </aside>
+  
+      </div>
+    </article>
+  </main>
+  </body>
+</html>

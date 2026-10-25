@@ -1,0 +1,51 @@
+{
+  "retrieved": "2026-10-25",
+  "note": "Original site fonts/favicon and extracted CSS tokens; lookdev and storyboards are original production adaptations. CSS wordmark is recreated from the actual site rules, not a supplied separate SVG logo.",
+  "assets": [
+    {
+      "file": "brand/barlow-400.woff2",
+      "sha256": "2cb8791c1cb29da4f8061ba56a6d2f3a0974ac76b2ce6f16236b38f1ea698eb1",
+      "bytes": 37128
+    },
+    {
+      "file": "brand/barlow-600.woff2",
+      "sha256": "511b27dcd748d4a58e5b5b87d84d3b601d00b8acb2963a18b8ea448f7d848524",
+      "bytes": 38336
+    },
+    {
+      "file": "brand/barlow-900.woff2",
+      "sha256": "5f34c09a6699a50350671f5b92ba7b5479b1176b6852ce23a488cd2c7b757b7e",
+      "bytes": 38192
+    },
+    {
+      "file": "brand/bitcount-latin.woff2",
+      "sha256": "e21d512423ed4aef35b0fd294dd2c6c6c0fd44274f8b306924bcdebcb06db6a3",
+      "bytes": 9592
+    },
+    {
+      "file": "brand/computed-tokens.json",
+      "sha256": "0bba38d115cafe13215e73b87ff9849b5b2a775f6ac690e6262daee5239854f6",
+      "bytes": 2634
+    },
+    {
+      "file": "brand/favicon.svg",
+      "sha256": "3a6c0a433ff0ee4d2f3dee207dfcc5898f75c71e99cd7e0add4b2c723a33232a",
+      "bytes": 1122
+    },
+    {
+      "file": "brand/home-desktop.png",
+      "sha256": "940344289733183c32341fec1660714356b369c5d9b8b368f5d42fa6bf9acecf",
+      "bytes": 166488
+    },
+    {
+      "file": "brand/logo-source.css",
+      "sha256": "ee107927a9e145de609b7ace7ca44b6138f4e23b601fcfa88a86053d86a47d2f",
+      "bytes": 1182
+    },
+    {
+      "file": "brand/site-tokens.json",
+      "sha256": "0b83b9d0c182c0a73414f90b9eca40f63ef1c4c1beda1c8ecc546ca0e8ce35b4",
+      "bytes": 2915
+    }
+  ]
+}
